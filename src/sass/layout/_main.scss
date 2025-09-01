@@ -1,0 +1,40 @@
+@use "../abstract/variables" as v; 
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    .hero {
+        width: 30%;
+        background-image: url("../../../img/green-leaf.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .title-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgba(0,0,0, 0.5);
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            position: relative;
+            top: 20%;
+            text-align: center;
+
+            img {
+                width: 7rem;
+            }
+            p{
+                font-size: 7rem;
+                font-family: v.$logo-font;
+                color: white;
+            }
+        }
+    }
+
+    .content {
+        width: 70%;
+        background-color: blue;
+    }
+}

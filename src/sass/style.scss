@@ -1,5 +1,11 @@
 @use "./abstract/variables" as v; 
 @use "./abstract/mixins" as m; 
 @use "./layout/hero.scss"; 
-@use "./layout/.hero.scss"; 
+@use "./layout/main.scss"; 
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
