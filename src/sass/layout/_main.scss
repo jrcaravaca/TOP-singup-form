@@ -35,6 +35,101 @@ main {
 
     .content {
         width: 70%;
-        background-color: blue;
+        background-color: #F9FAFB;
+        padding-top: 5rem;
+        .header {
+            padding: 5rem;
+
+            .title-container{
+                margin-bottom: 1rem;
+                h2{
+                    font-size: 1.5rem;
+                    max-width: 80%;
+                    em {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            div {
+                p{
+                    font-size: 1.5rem;
+                    font-weight: bold; 
+                    em {
+                        font-size: 1.5rem; 
+                    }
+                };
+            }
+        }
+
+        .form-container {
+            min-height: 25%;
+            background-color: white;
+            padding: 1rem 5rem;
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 4rem;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                        color: darkslategrey; 
+                        margin-bottom: 0.2rem;                 
+                    }
+
+                    input {
+                        width: 20;
+                        height: 1.5rem;
+                        margin-bottom: 1rem;
+                        border: 1px solid #E5E7EB;
+                    }
+
+                    input:focus {
+                        outline: 1px solid blue;
+                        box-shadow: 0px 3px 10px grey;
+                    }
+
+                    input:invalid{
+                        outline: 1px solid red;
+                    }
+                    
+                }
+            }
+        }
+
+        .button{
+            padding: 2rem 5rem;
+
+            button {
+                margin-bottom: 1rem;
+                padding: 1rem 3rem;
+                border-radius: 0.5rem;
+                background-color: v.$button-background;
+                color: white;
+                font-weight: bold;
+                border: 0;
+                box-shadow: 0px 3px 10px grey;
+            }
+
+            p {
+                font-size: 1.1rem;
+
+                a {
+                    font-size: 1.1rem;
+                    color: v.$button-background;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
